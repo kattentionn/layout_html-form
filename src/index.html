@@ -11,7 +11,205 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="POST"
+    name = "personal"
+    autocomplete="off">
+      <fieldset>
+        <legend>Personal information</legend>
+        <label
+          class="form">
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            required
+          >
+        </label>
+        <br>
+
+        <label
+          class="form">
+          Name:
+          <input
+            type="text"
+            name="name"
+            required
+          >
+        </label>
+        <br>
+
+        <label
+          class="form"
+        >
+          How old are You?
+          <input type="text"
+            name="age"
+            value = "12"
+            pattern="\d+"
+            min="1"
+            max="100"
+            maxlength="3"
+          >
+        </label>
+        <br
+        >
+        <label
+          class="form"
+        >
+          Full date of birth:
+          <input
+            type="date"
+            name="date"
+          >
+        </label>
+        <br
+        >
+        <label
+          class="form_last">
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="agreement"
+            required
+          >
+        </label>
+        <br>
+      </fieldset>
+    </form>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      name = "sign_in"
+      autocomplete="off"
+    >
+      <fieldset>
+        <legend>Registration</legend>
+        <label
+        class="form">
+        E-mail:
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          >
+        </label>
+        <br>
+        <label
+          class="form_last"
+        >
+          Password:
+          <input
+            type="password"
+            name="password"
+            minlength="6"
+            maxlength="20"
+            required
+          >
+        </label>
+        <br>
+      </fieldset>
+    </form>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      name = "facts"
+    >
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div
+        class="form"
+        >
+          <label>
+          Do you love cats?
+            <input
+            type="radio"
+            name="love_cats"
+            value ="yes"
+            >
+        Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="love_cats"
+              value ="no"
+            >
+        No
+          </label>
+        </div>
+        <label
+          class="form"
+        >
+          What is your favorite color?
+          <input
+            type="color"
+            name="color"
+          >
+        </label>
+        <br>
+        <label
+          class="form"
+        >
+          What time do you go to bed?
+          <input
+            type="time"
+            name="date"
+          >
+        </label>
+        <br>
+        <label
+          class="form">
+          What is your favorite brand of cars?
+          <select
+            name="car"
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <br>
+        <label
+          class="form_last"
+        >
+          How do you rate our work?
+          <input
+            type="range"
+            name="range"
+          >
+        </label>
+      </fieldset>
+    </form>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      name = "add_info">
+      <fieldset>
+        <legend>Additional info:</legend>
+        <label
+          class="form">
+          Comments:
+          <textarea
+            name="comments">
+          </textarea>
+        </label>
+        <br>
+        <label
+          class="form_last">
+          Would you recommend us?
+          <select
+            name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+    </form>
+    <button type="submit">Submit</button>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

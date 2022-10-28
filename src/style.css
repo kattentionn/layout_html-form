@@ -1,1 +1,13 @@
 /* styles go here */
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form_last {
+  margin-bottom: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
