@@ -1,6 +1,6 @@
 /* styles go here */
-label {
-  display: inline-block;
+.form {
+  display: block;
   margin-bottom: 10px;
 }
 
@@ -8,6 +8,6 @@ label {
   margin-bottom: 0;
 }
 
-fieldset {
+.block {
   margin-bottom: 20px;
 }

@@ -16,10 +16,9 @@
     method="POST"
     name = "personal"
     autocomplete="off">
-      <fieldset>
+      <fieldset class="block">
         <legend>Personal information</legend>
-        <label
-          class="form">
+        <label class="form">
           Surname:
           <input
             type="text"
@@ -27,10 +26,8 @@
             required
           >
         </label>
-        <br>
 
-        <label
-          class="form">
+        <label class="form">
           Name:
           <input
             type="text"
@@ -38,10 +35,8 @@
             required
           >
         </label>
-        <br>
 
-        <label
-          class="form"
+        <label class="form"
         >
           How old are You?
           <input type="text"
@@ -53,21 +48,16 @@
             maxlength="3"
           >
         </label>
-        <br
-        >
-        <label
-          class="form"
-        >
+
+        <label class="form">
           Full date of birth:
           <input
             type="date"
             name="date"
           >
         </label>
-        <br
-        >
-        <label
-          class="form_last">
+
+        <label class="form_last">
           I accept the term of the agreement
           <input
             type="checkbox"
@@ -75,19 +65,11 @@
             required
           >
         </label>
-        <br>
       </fieldset>
-    </form>
-    <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="POST"
-      name = "sign_in"
-      autocomplete="off"
-    >
-      <fieldset>
+
+      <fieldset class="block">
         <legend>Registration</legend>
-        <label
-        class="form">
+        <label class="form">
         E-mail:
           <input
             type="email"
@@ -96,10 +78,8 @@
             required
           >
         </label>
-        <br>
-        <label
-          class="form_last"
-        >
+
+        <label class="form_last">
           Password:
           <input
             type="password"
@@ -109,18 +89,11 @@
             required
           >
         </label>
-        <br>
       </fieldset>
-    </form>
-    <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="POST"
-      name = "facts"
-    >
-      <fieldset>
+
+      <fieldset class="block">
         <legend>An interesting fact about you!</legend>
-        <div
-        class="form"
+        <div class="form"
         >
           <label>
           Do you love cats?
@@ -140,18 +113,15 @@
         No
           </label>
         </div>
-        <label
-          class="form"
-        >
+        <label class="form">
           What is your favorite color?
           <input
             type="color"
             name="color"
           >
         </label>
-        <br>
-        <label
-          class="form"
+
+        <label class="form"
         >
           What time do you go to bed?
           <input
@@ -159,9 +129,8 @@
             name="date"
           >
         </label>
-        <br>
-        <label
-          class="form">
+
+        <label class="form">
           What is your favorite brand of cars?
           <select
             name="car"
@@ -172,9 +141,8 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <br>
-        <label
-          class="form_last"
+
+        <label class="form_last"
         >
           How do you rate our work?
           <input
@@ -183,33 +151,25 @@
           >
         </label>
       </fieldset>
-    </form>
-    <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="POST"
-      name = "add_info">
-      <fieldset>
+
+      <fieldset class="block">
         <legend>Additional info:</legend>
-        <label
-          class="form">
+        <label class="form">
           Comments:
-          <textarea
-            name="comments">
-          </textarea>
+          <textarea maxlength="500" name="comments"></textarea>
         </label>
-        <br>
-        <label
-          class="form_last">
+
+        <label class="form_last">
           Would you recommend us?
-          <select
-            name="recommend">
+          <select name="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </label>
       </fieldset>
+
+      <button type="submit">Submit</button>
     </form>
-    <button type="submit">Submit</button>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
