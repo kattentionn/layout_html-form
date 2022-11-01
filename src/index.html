@@ -12,10 +12,11 @@
   </head>
   <body>
     <form
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="POST"
-    name = "personal"
-    autocomplete="off">
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      name = "personal"
+      autocomplete="off"
+    >
       <fieldset class="block">
         <legend>Personal information</legend>
         <label class="form">
@@ -38,7 +39,8 @@
 
         <label class="form">
           How old are You?
-          <input type="text"
+          <input
+            type="text"
             name="age"
             value = "12"
             pattern="\d+"
@@ -69,7 +71,7 @@
       <fieldset class="block">
         <legend>Registration</legend>
         <label class="form">
-        E-mail:
+          E-mail:
           <input
             type="email"
             name="email"
@@ -94,7 +96,7 @@
         <legend>An interesting fact about you!</legend>
         <div class="form">
           <label>
-          Do you love cats?
+            Do you love cats?
             <input
               type="radio"
               name="love_cats"
